@@ -11,8 +11,8 @@ function getShop(req, res) {
   
   for(let i = 0; i <=5; i++) {
      arr.push({
-        "name-product": '' + faker.commerce.productName(),
-        "image-product": '' + faker.image.abstract(),
+        "nameproduct": '' + faker.commerce.productName(),
+        "imageproduct": '' + faker.image.abstract(),
         "price": '' + faker.commerce.price()
         });
   }

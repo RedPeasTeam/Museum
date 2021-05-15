@@ -135,11 +135,9 @@ definitions:
         type: string
   Shop:
     properties:
-      name-product:
+      nameproduct:
         type: string
-      image-product:
-        type: string
-      cost-exhibi:
+      imageproduct:
         type: string
       price:
         type: string
