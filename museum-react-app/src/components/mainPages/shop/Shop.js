@@ -21,7 +21,6 @@ class Shop extends Component{
 
             <div className='people'>
             <div className='difficulty-nav'>{element.price}</div>
-            <div className='amount-nav'>10-{element.id} чел</div>
          </div>
       </div>
 <div className='btn-nav'>
