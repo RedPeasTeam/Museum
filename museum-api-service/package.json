@@ -8,6 +8,7 @@
   "license": "",
   "main": "app.js",
   "dependencies": {
+    "combined-stream": "^1.0.8",
     "express": "^4.12.3",
     "faker": "^5.5.3",
     "swagger-express-mw": "^0.1.0"
