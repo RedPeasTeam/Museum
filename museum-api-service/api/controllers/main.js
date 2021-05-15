@@ -15,9 +15,9 @@ for(let i = 0; i <=5; i++) {
    arr.push({
       "id": '' + faker.datatype.number(),
       "name-exhibi": '' + faker.lorem.word(),
-      "image-exhibi": '' + faker.image.people().slice(0, -10) + Math.ceil(Math.random() * 400) + '/people',
+      "image-exhibi": '' + faker.image.people(),
       "description-exhibi": '' + faker.lorem.words(),
-      "image-news": '' + faker.image.people().slice(0, -10) + Math.ceil(Math.random() * 400) + '/people',
+      "image-news": '' + faker.image.people(),
       "description-news": '' + faker.lorem.words()
       });
 }
