@@ -19,11 +19,11 @@ function getParematres(req, res) {
     
      arr.push({
         "id": faker.datatype.number(),
-        "name-exhibi": '' + faker.lorem.word(),
-        "image-exhibi": '' + faker.image.people().slice(0, -10) + Math.ceil(Math.random() * 400) + '/people',
-        "description-exhibi": '' + faker.lorem.words(),
-        "image-news": '' + faker.image.nature().slice(0, -10) + Math.ceil(Math.random() * 400) + '/nature',
-        "description-news": '' + faker.lorem.words()
+        "nameExhibi": '' + faker.lorem.word(),
+        "imageExhibi": '' + faker.image.people().slice(0, -10) + Math.ceil(Math.random() * 400) + '/people',
+        "descriptionExhibi": '' + faker.lorem.words(),
+        "imageNews": '' + faker.image.nature().slice(0, -10) + Math.ceil(Math.random() * 400) + '/nature',
+        "descriptionNews": '' + faker.lorem.words()
         });
   }
   res.json([...arr]);

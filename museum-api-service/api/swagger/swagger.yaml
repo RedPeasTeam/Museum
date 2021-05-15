@@ -123,15 +123,15 @@ definitions:
     properties:
       id:
         type: number
-      name-exhibi:
+      nameExhibi:
         type: string
-      image-exhibi:
+      imageExhibi:
         type: string
-      description-exhibi:
+      descriptionExhibi:
         type: string
-      image-news:
+      imageNews:
         type: string
-      description-news:
+      descriptionNews:
         type: string
   Shop:
     properties:
