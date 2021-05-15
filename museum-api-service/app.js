@@ -22,4 +22,7 @@ SwaggerExpress.create(config, function(err, swaggerExpress) {
   if (swaggerExpress.runner.swagger.paths['/main']) {
     console.log('curl http://127.0.0.1:' + port + '/api/v1/main');
   }
+  if (swaggerExpress.runner.swagger.paths['/shop']) {
+    console.log('curl http://127.0.0.1:' + port + '/api/v1/shop');
+  }
 }});
