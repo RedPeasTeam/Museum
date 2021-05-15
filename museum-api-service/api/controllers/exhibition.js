@@ -6,21 +6,22 @@ module.exports = {
   exhibition: getExhibition
 };
 
+const images = [faker.image.nature, faker.image.nightlife, faker.image.sports, faker.image.abstract, faker.image.cats];
 
 function getExhibition(req, res) {
   const exhibitions = [];
   
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i < 7; i += 1) {
     exhibitions.push({
-      "name-exhibi": '' + faker.company.companyName(),
-      "image-exhibi": '' + faker.image.nature(),
-      "cost-exhibi": '' + faker.datatype.number({
+      "nameexhibi": '' + faker.company.companyName(),
+      "imageexhibi": '' + images[i % 5](),
+      "costexhibi": '' + faker.datatype.number({
         "min": 10,
         "max": 100
       }),
-      "name-guide": '' + faker.name.firstName(),
-      "image-guide": '' + faker.image.people(),
-      "ratio-guide":  '' + faker.datatype.float({
+      "nameguide": '' + faker.name.firstName(),
+      "imageguide": '' + faker.image.people(),
+      "ratioguide":  '' + faker.datatype.float({
         "min": 1,
         "max": 10
       })
