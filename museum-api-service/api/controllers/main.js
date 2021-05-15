@@ -1,18 +1,5 @@
 'use strict';
-
 const faker = require('faker')
-
-// for(let i = 0; i <=5; i++) {
-//   const arr = [];
-//    arr.push({
-//       "id": '' + faker.datatype.number(),
-//       "name-exhibi": '' + faker.lorem.word(),
-//       "image-exhibi": '' + faker.image.people().slice(0, -10) + Math.ceil(Math.random() * 400) + '/people',
-//       "description-exhibi": '' + faker.lorem.words(),
-//       "image-news": '' + faker.image.people().slice(0, -10) + Math.ceil(Math.random() * 400) + '/people',
-//       "description-news": '' + faker.lorem.words()
-//       });
-// }
 /*
  Once you 'require' a module you can reference the things that it exports.  These are defined in module.exports.
  For a controller in a127 (which this is) you should export the functions referenced in your Swagger document by name.
@@ -28,14 +15,14 @@ module.exports = {
 
 function getParematres(req, res) {
   const arr = [];
-  for(let i = 0; i <=5; i++) {
+  for(let i = 0; i <= 7; i++) {
     
      arr.push({
         "id": faker.datatype.number(),
         "name-exhibi": '' + faker.lorem.word(),
         "image-exhibi": '' + faker.image.people().slice(0, -10) + Math.ceil(Math.random() * 400) + '/people',
         "description-exhibi": '' + faker.lorem.words(),
-        "image-news": '' + faker.image.people().slice(0, -10) + Math.ceil(Math.random() * 400) + '/people',
+        "image-news": '' + faker.image.nature().slice(0, -10) + Math.ceil(Math.random() * 400) + '/nature',
         "description-news": '' + faker.lorem.words()
         });
   }
