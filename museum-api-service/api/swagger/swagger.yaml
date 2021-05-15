@@ -65,6 +65,30 @@ paths:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
+  /shop:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: shop
+    get:
+      description: Returns shop to the caller
+      # used as the method name of the controller
+      operationId: shop
+      parameters:
+        - name: date
+          in: query
+          description: Shop
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/ShopResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
   /swagger:
     x-swagger-pipe: swagger_raw
 # complex objects have schema definitions
@@ -77,6 +101,10 @@ definitions:
     type: array
     items:
       $ref: "#/definitions/Main"
+  ShopResponse:
+    type: array
+    items:
+      $ref: "#/definitions/Shop"
   Exhibition:
     properties:
       name-exhibi:
@@ -105,7 +133,16 @@ definitions:
         type: string
       description-news:
         type: string
-      
+  Shop:
+    properties:
+      name-product:
+        type: string
+      image-product:
+        type: string
+      cost-exhibi:
+        type: string
+      price:
+        type: string
       
   ErrorResponse:
     required:
