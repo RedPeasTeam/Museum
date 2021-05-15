@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 {
     "npmName": "typescript-fetch-api",
     "npmVersion": "1.0.0",
@@ -7,12 +5,4 @@
     "supportsES6": false,
     "modelPropertyNaming": "original"
   }
-=======
-{
-   "npmName": "typescript-fetch-api",
-   "npmVersion": "1.0.0",
-   "snapshot" : false,
-   "supportsES6": false,
-   "modelPropertyNaming": "original"
- }
->>>>>>> e66c9718894d35a6faf648ea8c3a621ea6c4564c
+
