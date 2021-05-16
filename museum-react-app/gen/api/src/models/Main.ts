@@ -30,31 +30,31 @@ export interface Main {
      * @type {string}
      * @memberof Main
      */
-    name_exhibi?: string;
+    nameExhibi?: string;
     /**
      * 
      * @type {string}
      * @memberof Main
      */
-    image_exhibi?: string;
+    imageExhibi?: string;
     /**
      * 
      * @type {string}
      * @memberof Main
      */
-    description_exhibi?: string;
+    descriptionExhibi?: string;
     /**
      * 
      * @type {string}
      * @memberof Main
      */
-    image_news?: string;
+    imageNews?: string;
     /**
      * 
      * @type {string}
      * @memberof Main
      */
-    description_news?: string;
+    descriptionNews?: string;
 }
 
 export function MainFromJSON(json: any): Main {
@@ -68,11 +68,11 @@ export function MainFromJSONTyped(json: any, ignoreDiscriminator: boolean): Main
     return {
         
         'id': !exists(json, 'id') ? undefined : json['id'],
-        'name_exhibi': !exists(json, 'name-exhibi') ? undefined : json['name-exhibi'],
-        'image_exhibi': !exists(json, 'image-exhibi') ? undefined : json['image-exhibi'],
-        'description_exhibi': !exists(json, 'description-exhibi') ? undefined : json['description-exhibi'],
-        'image_news': !exists(json, 'image-news') ? undefined : json['image-news'],
-        'description_news': !exists(json, 'description-news') ? undefined : json['description-news'],
+        'nameExhibi': !exists(json, 'nameExhibi') ? undefined : json['nameExhibi'],
+        'imageExhibi': !exists(json, 'imageExhibi') ? undefined : json['imageExhibi'],
+        'descriptionExhibi': !exists(json, 'descriptionExhibi') ? undefined : json['descriptionExhibi'],
+        'imageNews': !exists(json, 'imageNews') ? undefined : json['imageNews'],
+        'descriptionNews': !exists(json, 'descriptionNews') ? undefined : json['descriptionNews'],
     };
 }
 
@@ -86,11 +86,11 @@ export function MainToJSON(value?: Main | null): any {
     return {
         
         'id': value.id,
-        'name-exhibi': value.name_exhibi,
-        'image-exhibi': value.image_exhibi,
-        'description-exhibi': value.description_exhibi,
-        'image-news': value.image_news,
-        'description-news': value.description_news,
+        'nameExhibi': value.nameExhibi,
+        'imageExhibi': value.imageExhibi,
+        'descriptionExhibi': value.descriptionExhibi,
+        'imageNews': value.imageNews,
+        'descriptionNews': value.descriptionNews,
     };
 }
 

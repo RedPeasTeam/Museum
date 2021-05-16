@@ -146,22 +146,22 @@
       "Exhibition" : {
         "type" : "object",
         "properties" : {
-          "name-exhibi" : {
+          "nameexhibi" : {
             "type" : "string"
           },
-          "image-exhibi" : {
+          "imageexhibi" : {
             "type" : "string"
           },
-          "cost-exhibi" : {
+          "costexhibi" : {
             "type" : "string"
           },
-          "name-guide" : {
+          "nameguide" : {
             "type" : "string"
           },
-          "image-guide" : {
+          "imageguide" : {
             "type" : "string"
           },
-          "ratio-guide" : {
+          "ratioguide" : {
             "type" : "string"
           }
         }
@@ -172,19 +172,19 @@
           "id" : {
             "type" : "number"
           },
-          "name-exhibi" : {
+          "nameExhibi" : {
             "type" : "string"
           },
-          "image-exhibi" : {
+          "imageExhibi" : {
             "type" : "string"
           },
-          "description-exhibi" : {
+          "descriptionExhibi" : {
             "type" : "string"
           },
-          "image-news" : {
+          "imageNews" : {
             "type" : "string"
           },
-          "description-news" : {
+          "descriptionNews" : {
             "type" : "string"
           }
         }

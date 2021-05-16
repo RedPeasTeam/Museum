@@ -24,37 +24,37 @@ export interface Exhibition {
      * @type {string}
      * @memberof Exhibition
      */
-    name_exhibi?: string;
+    nameexhibi?: string;
     /**
      * 
      * @type {string}
      * @memberof Exhibition
      */
-    image_exhibi?: string;
+    imageexhibi?: string;
     /**
      * 
      * @type {string}
      * @memberof Exhibition
      */
-    cost_exhibi?: string;
+    costexhibi?: string;
     /**
      * 
      * @type {string}
      * @memberof Exhibition
      */
-    name_guide?: string;
+    nameguide?: string;
     /**
      * 
      * @type {string}
      * @memberof Exhibition
      */
-    image_guide?: string;
+    imageguide?: string;
     /**
      * 
      * @type {string}
      * @memberof Exhibition
      */
-    ratio_guide?: string;
+    ratioguide?: string;
 }
 
 export function ExhibitionFromJSON(json: any): Exhibition {
@@ -67,12 +67,12 @@ export function ExhibitionFromJSONTyped(json: any, ignoreDiscriminator: boolean)
     }
     return {
         
-        'name_exhibi': !exists(json, 'name-exhibi') ? undefined : json['name-exhibi'],
-        'image_exhibi': !exists(json, 'image-exhibi') ? undefined : json['image-exhibi'],
-        'cost_exhibi': !exists(json, 'cost-exhibi') ? undefined : json['cost-exhibi'],
-        'name_guide': !exists(json, 'name-guide') ? undefined : json['name-guide'],
-        'image_guide': !exists(json, 'image-guide') ? undefined : json['image-guide'],
-        'ratio_guide': !exists(json, 'ratio-guide') ? undefined : json['ratio-guide'],
+        'nameexhibi': !exists(json, 'nameexhibi') ? undefined : json['nameexhibi'],
+        'imageexhibi': !exists(json, 'imageexhibi') ? undefined : json['imageexhibi'],
+        'costexhibi': !exists(json, 'costexhibi') ? undefined : json['costexhibi'],
+        'nameguide': !exists(json, 'nameguide') ? undefined : json['nameguide'],
+        'imageguide': !exists(json, 'imageguide') ? undefined : json['imageguide'],
+        'ratioguide': !exists(json, 'ratioguide') ? undefined : json['ratioguide'],
     };
 }
 
@@ -85,12 +85,12 @@ export function ExhibitionToJSON(value?: Exhibition | null): any {
     }
     return {
         
-        'name-exhibi': value.name_exhibi,
-        'image-exhibi': value.image_exhibi,
-        'cost-exhibi': value.cost_exhibi,
-        'name-guide': value.name_guide,
-        'image-guide': value.image_guide,
-        'ratio-guide': value.ratio_guide,
+        'nameexhibi': value.nameexhibi,
+        'imageexhibi': value.imageexhibi,
+        'costexhibi': value.costexhibi,
+        'nameguide': value.nameguide,
+        'imageguide': value.imageguide,
+        'ratioguide': value.ratioguide,
     };
 }
 
